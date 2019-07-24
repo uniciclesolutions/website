@@ -1,10 +1,11 @@
 import React from "react"
 import { Flex } from "@rebass/grid"
 import styled from "styled-components"
+import BikeLogo from "../static/img/bike.svg"
 
 const Navbar = styled.div`
   width: 100%;
-  background-color: #9EC766
+  background-color: #F2F2F2
   height: 80px
 `
 const Title = styled.h1`
@@ -12,11 +13,10 @@ const Title = styled.h1`
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 29px;
   text-align: center;
-  text-transform: uppercase;
 
-  color: #696973;
+  color: #333333;
 `
 
 const Header = () => {
@@ -24,10 +24,10 @@ const Header = () => {
     <Navbar>
       <Flex py={30} px={15} justifyContent="center">
         <Flex width={1 / 2}>
-          <Title>UCS</Title>
+          <BikeLogo style={{ width: 35 }} />
         </Flex>
         <Flex width={1 / 3} justifyContent="space-between">
-          <Title>What's UCS?</Title>
+          <Title>What's UCS</Title>
 
           <Title>About Us</Title>
 
