@@ -54,7 +54,6 @@ const aboutUs = () => {
         backgroundColor: "#6EC1A9",
       }}
     >
-      {" "}
       hi
     </Flex>
   )

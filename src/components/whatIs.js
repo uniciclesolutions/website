@@ -53,16 +53,10 @@ const whatIs = () => {
       style={{ backgroundColor: "#F2F2F2" }}
     >
       <Flex flexDirection="column" width={[1, 1 / 2]}>
-        <Title> We provide solutions for keep your bicycle secure </Title>
+        <Title> What´s U.C.S </Title>
         <Desc>
-          Automate key elements of the entire customer journey from discovery to
-          desire, purchase, delivery, purchasing again and finally promoting.
-          Create a personalized experience for every customer and make
-          communicating with your brand more enjoyable. Innovate beyond
-          monotonous contact forms and start a conversation with your brand
-          right away from digital ads, social media and your website. Gather and
-          analyze customer feedback and data and continuously optimise your
-          chatbot for the perfect experience that drives results.
+          Is a platform that connects cyclists to a community that pursues
+          sustainable transport as a way for future mobility.
         </Desc>
       </Flex>
       <Flex ml={[0, 80]} width={[1, 1 / 2]}>

@@ -27,11 +27,10 @@ const Header = () => {
           <BikeLogo style={{ width: 35 }} />
         </Flex>
         <Flex width={1 / 3} justifyContent="space-between">
-          <Title>What's UCS</Title>
-
-          <Title>About Us</Title>
-
+          <Title>What´s U.C.S</Title>
+          <Title>How does it Work</Title>
           <Title>Security</Title>
+          <Title>About Us</Title>
         </Flex>
       </Flex>
     </Navbar>
