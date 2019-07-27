@@ -7,7 +7,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Navbar = styled.div`
   width: 100%;
-  background-color: #9EC766
+  background-color: white
   height: 80px
 `
 const Title = styled.h1`
@@ -50,7 +50,7 @@ const whatIs = () => {
       px={[15, 165]}
       py={[10, 50]}
       flexDirection={["column", "row"]}
-      style={{ backgroundColor: "#F2F2F2" }}
+      style={{ backgroundColor: "white" }}
     >
       <Flex flexDirection="column" width={[1, 1 / 2]}>
         <Title> What´s U.C.S </Title>

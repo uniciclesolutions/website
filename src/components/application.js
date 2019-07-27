@@ -27,7 +27,6 @@ const Desc = styled.p`
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
-  width: 400px;
   color: #696973;
 `
 
@@ -61,16 +60,17 @@ const application = () => {
   )
   return (
     <Flex
-      pt={[0, 80]}
       px={[15, 165]}
       pt={[10, 150]}
-      pb={[10, 400]}
+      pb={[250, 400]}
       flexDirection={["column", "row"]}
-      style={{ backgroundColor: "#F2F2F2", borderBottom: "solid 3px #00FF00" }}
+      style={{ backgroundColor: "#F2F2F2" }}
     >
-      <Flex flexDirection="column" width={[1, 1 / 2]}>
+      <Flex flexDirection="column" width={[0.8, 1 / 2]}>
         <Title> Care in the Smart Way</Title>
-        <Desc>Download the App and take control. Coming soon!</Desc>
+        <Desc>
+          Download the App and take control. <b>Coming soon!</b>
+        </Desc>
       </Flex>
       <DesktopFlex>
         <Img
@@ -102,6 +102,35 @@ const application = () => {
           fluid={downloadIos.childImageSharp.fluid}
         ></Img>
       </DesktopFlex>
+      <MobileFlex>
+        <Img
+          style={{
+            position: "absolute",
+            top: 342,
+            right: 235,
+            width: 80,
+          }}
+          fluid={app.childImageSharp.fluid}
+        ></Img>
+        <Img
+          style={{
+            position: "absolute",
+            top: 342,
+            left: 200,
+            width: 100,
+          }}
+          fluid={downloadAndroid.childImageSharp.fluid}
+        ></Img>
+        <Img
+          style={{
+            position: "absolute",
+            top: 400,
+            left: 200,
+            width: 100,
+          }}
+          fluid={downloadIos.childImageSharp.fluid}
+        ></Img>
+      </MobileFlex>
     </Flex>
   )
 }
