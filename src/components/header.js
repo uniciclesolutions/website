@@ -6,7 +6,7 @@ import { DesktopFlex, MobileFlex } from "../breakpoints"
 
 const Navbar = styled.div`
   width: 100%;
-  background-color: white
+  background-color: #F2F2F2
   height: 80px
 `
 const Title = styled.h1`
@@ -19,13 +19,22 @@ const Title = styled.h1`
 
   color: #333333;
 `
+const TitleBrand = styled.h2`
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 60px;
+
+  color: #333333;
+`
 
 const Header = () => {
   return (
     <Navbar>
       <Flex py={30} px={15} justifyContent="center">
         <Flex width={1 / 2}>
-          <BikeLogo style={{ width: 35 }} />
+          <TitleBrand>UniCycle Solutions</TitleBrand>
         </Flex>
 
         <DesktopFlex width={1 / 3} justifyContent="space-between">

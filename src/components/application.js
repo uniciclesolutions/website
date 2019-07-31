@@ -14,7 +14,7 @@ const Navbar = styled.div`
 const Title = styled.h1`
   font-family: Heebo;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 40px;
   line-height: 60px;
 
