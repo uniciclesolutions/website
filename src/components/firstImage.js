@@ -55,7 +55,7 @@ const firstImage = () => {
   )
   return (
     <Img
-      style={{ position: "absolute", width: "60%" }}
+      style={{ position: "absolute", width: "50%" }}
       fluid={bikeImage.childImageSharp.fluid}
     ></Img>
   )

@@ -56,11 +56,11 @@ const whatIs = () => {
   return (
     <Flex
       px={[15, 165]}
-      py={[10, 242]}
+      py={[10, 230]}
       flexDirection={["column", "column"]}
-      style={{ backgroundColor: "white", textAlign: "center" }}
+      style={{ backgroundColor: "#F2F2F2", textAlign: "center" }}
     >
-      <Flex pb={[0, 90]} justifyContent="flex-end">
+      <Flex pb={[0, 90]} ml={[0, "60%"]}>
         <Flex flexDirection="column">
           <Title> What´s U.C.S </Title>
           <Desc>
