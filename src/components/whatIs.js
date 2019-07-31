@@ -2,19 +2,24 @@ import React from "react"
 import { Flex } from "@rebass/grid"
 import styled from "styled-components"
 import Img from "gatsby-image"
-
 import { useStaticQuery, graphql } from "gatsby"
+import SecureIcon from "../static/img/icons/secureIcon.svg"
 
-const Navbar = styled.div`
-  width: 100%;
-  background-color: white
-  height: 80px
-`
 const Title = styled.h1`
   font-family: Heebo;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
+  line-height: 60px;
+
+  color: #333333;
+`
+
+const Subtitle = styled.h2`
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 60px;
 
   color: #333333;
@@ -26,44 +31,50 @@ const Desc = styled.p`
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
-  width: 400px;
   color: #696973;
 `
 
 const whatIs = () => {
-  const { bikeepImg } = useStaticQuery(
-    graphql`
-      query {
-        bikeepImg: file(relativePath: { eq: "bikeep_example.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 2048) {
-              ...GatsbyImageSharpFluid_noBase64
-            }
-          }
-        }
-      }
-    `
-  )
   return (
     <Flex
       pt={[0, 80]}
       px={[15, 165]}
       py={[10, 50]}
-      flexDirection={["column", "row"]}
-      style={{ backgroundColor: "white" }}
+      flexDirection={["column", "column"]}
+      style={{ backgroundColor: "white", textAlign: "center" }}
     >
-      <Flex flexDirection="column" width={[1, 1 / 2]}>
-        <Title> What´s U.C.S </Title>
-        <Desc>
-          Is a platform that connects cyclists to a community that pursues
-          sustainable transport as a way for future mobility.
-        </Desc>
-      </Flex>
-      <Flex ml={[0, 80]} width={[1, 1 / 2]}>
-        <Img
-          style={{ width: 500 }}
-          fluid={bikeepImg.childImageSharp.fluid}
-        ></Img>
+      <Title> What´s U.C.S </Title>
+      <Desc>
+        Is a platform that connects cyclists to a community that pursues
+        sustainable transport as a way for future mobility.
+      </Desc>
+      <Flex
+        pt={[0, 30]}
+        flexDirection={["column", "row"]}
+        justifyContent="space-between"
+        textAlign="center"
+      >
+        <Flex width={1 / 4} flexDirection="column" justifyContent="center">
+          <SecureIcon width="280" height="80" />
+          <Subtitle>SAFE</Subtitle>
+          <Desc>
+            We provide a completely secure way to park your personal bicycle,
+            Smart Bicycle racks. (Bikeep link)
+          </Desc>
+        </Flex>
+        <Flex width={1 / 4} flexDirection="column">
+          <SecureIcon width="280" height="80" />
+          <Subtitle>SUITED</Subtitle>
+          <Desc>
+            We bring access and control to a wide range of affordable and
+            reachable cycling services.
+          </Desc>
+        </Flex>
+        <Flex width={1 / 4} flexDirection="column">
+          <SecureIcon width="280" height="80" />
+          <Subtitle>SIMPLE</Subtitle>
+          <Desc>ALL the services and features that you need in ONE App</Desc>
+        </Flex>
       </Flex>
     </Flex>
   )
