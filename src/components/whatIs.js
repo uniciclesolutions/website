@@ -55,20 +55,13 @@ const whatIs = () => {
   )
   return (
     <Flex
-      pt={[35, 80]}
       px={[15, 165]}
-      py={[10, 50]}
+      py={[10, 242]}
       flexDirection={["column", "column"]}
-      style={{ backgroundColor: "#F2F2F2", textAlign: "center" }}
+      style={{ backgroundColor: "white", textAlign: "center" }}
     >
-      <Flex pb={[0, 90]}>
-        <DesktopFlex width={0.7}>
-          <Img
-            style={{ width: "580px", height: "370px" }}
-            fluid={bikeImage.childImageSharp.fluid}
-          ></Img>
-        </DesktopFlex>
-        <Flex flexDirection="column" pt={[0, 80]}>
+      <Flex pb={[0, 90]} justifyContent="flex-end">
+        <Flex flexDirection="column">
           <Title> What´s U.C.S </Title>
           <Desc>
             Is a platform that connects cyclists to a community that pursues
@@ -77,7 +70,7 @@ const whatIs = () => {
         </Flex>
       </Flex>
       <Flex
-        pt={[0, 30]}
+        pt={[0, 150]}
         flexDirection={["column", "row"]}
         justifyContent="space-between"
         textAlign="center"
