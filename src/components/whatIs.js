@@ -56,58 +56,17 @@ const whatIs = () => {
   return (
     <Flex
       px={[15, 165]}
-      py={[10, 230]}
+      py={[10, 150]}
       flexDirection={["column", "column"]}
-      style={{ backgroundColor: "#F2F2F2", textAlign: "center" }}
+      style={{ backgroundColor: "white", textAlign: "center" }}
     >
-      <Flex pb={[0, 90]} ml={[0, "60%"]}>
+      <Flex pb={[0]} ml={[0, "75%"]}>
         <Flex flexDirection="column">
           <Title> What´s U.C.S </Title>
           <Desc>
             Is a platform that connects cyclists to a community that pursues
             sustainable transport as a way for future mobility.
           </Desc>
-        </Flex>
-      </Flex>
-      <Flex
-        pt={[0, 150]}
-        flexDirection={["column", "row"]}
-        justifyContent="space-between"
-        textAlign="center"
-      >
-        <Flex
-          width={[1, 1 / 4]}
-          flexDirection="column"
-          justifyContent="center"
-          style={{ alignItems: "center" }}
-        >
-          <SecureIcon width="330" height="80" />
-          <Subtitle>SAFE</Subtitle>
-          <Desc>
-            We provide a completely secure way to park your personal bicycle,
-            Smart Bicycle racks. (Bikeep link)
-          </Desc>
-        </Flex>
-        <Flex
-          width={[1, 1 / 4]}
-          flexDirection="column"
-          style={{ alignItems: "center" }}
-        >
-          <SecureIcon width="330" height="80" />
-          <Subtitle>SUITED</Subtitle>
-          <Desc>
-            We bring access and control to a wide range of affordable and
-            reachable cycling services.
-          </Desc>
-        </Flex>
-        <Flex
-          width={[1, 1 / 4]}
-          flexDirection="column"
-          style={{ alignItems: "center" }}
-        >
-          <SecureIcon width="330" height="80" />
-          <Subtitle>SIMPLE</Subtitle>
-          <Desc>ALL the services and features that you need in ONE App</Desc>
         </Flex>
       </Flex>
     </Flex>

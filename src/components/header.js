@@ -32,8 +32,8 @@ const TitleBrand = styled.h2`
 const Header = () => {
   return (
     <Navbar>
-      <Flex py={30} px={15} justifyContent="center">
-        <Flex width={1 / 2}>
+      <Flex py={[15, 30]} px={[15, 15]} justifyContent="center">
+        <Flex width={[1, 1 / 2]}>
           <TitleBrand>UniCycle Solutions</TitleBrand>
         </Flex>
 

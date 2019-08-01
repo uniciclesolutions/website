@@ -54,10 +54,12 @@ const firstImage = () => {
     `
   )
   return (
-    <Img
-      style={{ position: "absolute", width: "50%" }}
-      fluid={bikeImage.childImageSharp.fluid}
-    ></Img>
+    <DesktopFlex>
+      <Img
+        style={{ position: "absolute", width: "50%" }}
+        fluid={bikeImage.childImageSharp.fluid}
+      ></Img>
+    </DesktopFlex>
   )
 }
 export default firstImage
