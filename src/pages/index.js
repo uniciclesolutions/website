@@ -12,7 +12,7 @@ const IndexPage = () => (
   <>
     <Header />
     <Application />
-    <FirstImage />
+    {/* <FirstImage /> */}
     <WhatIs />
     <Points />
     {/* <AboutUs /> */}

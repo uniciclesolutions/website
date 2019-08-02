@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import SecureIcon from "../static/img/icons/secureIcon.svg"
-import { DesktopFlex } from "../breakpoints"
+import { DesktopFlex, MobileFlex } from "../breakpoints"
 
 const Title = styled.h1`
   font-family: Heebo;
@@ -38,6 +38,10 @@ const Desc = styled.p`
     width: 100%;
   }
 `
+const Section = styled(Flex)`
+  backgroundcolor: white;
+  textalign: center;
+`
 
 const whatIs = () => {
   const { bikeImage } = useStaticQuery(
@@ -54,22 +58,46 @@ const whatIs = () => {
     `
   )
   return (
-    <Flex
+    <Section
       px={[15, 165]}
-      py={[10, 150]}
+      pt={-10}
+      pb={-10}
       flexDirection={["column", "column"]}
-      style={{ backgroundColor: "white", textAlign: "center" }}
     >
-      <Flex pb={[0]} ml={[0, "75%"]}>
-        <Flex flexDirection="column">
+      <DesktopFlex>
+        <Img
+          style={{ width: "65%", marginLeft: -165 }}
+          fluid={bikeImage.childImageSharp.fluid}
+        ></Img>
+        <Flex
+          pl={[0, 260]}
+          flexDirection="column"
+          justifyContent="center"
+          style={{ alignItems: "center" }}
+        >
           <Title> What´s U.C.S </Title>
           <Desc>
             Is a platform that connects cyclists to a community that pursues
             sustainable transport as a way for future mobility.
           </Desc>
         </Flex>
-      </Flex>
-    </Flex>
+      </DesktopFlex>
+      <MobileFlex>
+        <Flex
+          pl={[0, 260]}
+          flexDirection="column"
+          justifyContent="center"
+          style={{ alignItems: "center" }}
+          pt={20}
+        >
+          <Title> What´s U.C.S </Title>
+          <Desc>
+            Is a platform that connects cyclists to a community that pursues
+            sustainable transport as a way for future mobility.
+          </Desc>
+        </Flex>
+      </MobileFlex>
+    </Section>
   )
 }
 export default whatIs

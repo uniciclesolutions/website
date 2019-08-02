@@ -41,6 +41,7 @@ const points = () => {
     >
       <Flex
         width={[1, 1 / 4]}
+        pt={20}
         flexDirection="column"
         justifyContent="center"
         style={{ alignItems: "center" }}

@@ -69,7 +69,7 @@ const application = () => {
       <Flex flexDirection="column" width={[0.8, 1 / 2]}>
         <Title> Care in the Smart Way</Title>
         <Desc>
-          Download the App and take control. <b>Coming soon!</b>
+          Security, Services and community for cyclists. <b>Coming soon!</b>
         </Desc>
       </Flex>
       <DesktopFlex>
@@ -78,7 +78,7 @@ const application = () => {
             position: "absolute",
             top: 160,
             right: 300,
-            width: 250,
+            width: "15%",
             transform: "rotate(-9.98deg)",
           }}
           fluid={app.childImageSharp.fluid}
