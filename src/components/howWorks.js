@@ -21,7 +21,6 @@ const Subtitle = styled.h2`
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-
   line-height: 60px;
   @media (max-width: 426px) {
     line-height: 20px;
@@ -95,7 +94,7 @@ const howWorks = () => {
           <Subtitle> 2. Find your Bikeep Rack to park</Subtitle>
           <Subtitle> 3. Unlock with your phone or ID card </Subtitle>
           <Subtitle> 4. Lock up your bike </Subtitle>
-          <Subtitle> 5. Access All Services, Anytime and Anywhere </Subtitle>
+          <Subtitle> 5. Access All Services </Subtitle>
         </Flex>
         <Flex width={0.35}>
           <Img
