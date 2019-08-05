@@ -51,14 +51,14 @@ const howWorks = () => {
   const { image1, image2 } = useStaticQuery(
     graphql`
       query {
-        image1: file(relativePath: { eq: "whatIsImage.png" }) {
+        image1: file(relativePath: { eq: "image1_ultimateSolution.png" }) {
           childImageSharp {
             fluid(maxWidth: 2048) {
               ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
-        image2: file(relativePath: { eq: "whatIsImage.png" }) {
+        image2: file(relativePath: { eq: "image2_ultimateSolution.png" }) {
           childImageSharp {
             fluid(maxWidth: 2048) {
               ...GatsbyImageSharpFluid_noBase64
@@ -99,7 +99,7 @@ const howWorks = () => {
         <Flex width={0.35}>
           <Img
             style={{ width: "100%" }}
-            fluid={image1.childImageSharp.fluid}
+            fluid={image2.childImageSharp.fluid}
           ></Img>
         </Flex>
       </DesktopFlex>

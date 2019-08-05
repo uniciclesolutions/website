@@ -6,6 +6,7 @@ import WhatIs from "../components/whatIs"
 import FirstImage from "../components/firstImage"
 import Points from "../components/points"
 import HowWorks from "../components/howWorks"
+import UltimateSolutions from "../components/ultimateSolution"
 import AboutUs from "../components/aboutUs"
 import { Flex } from "@rebass/grid"
 
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <WhatIs />
     <Points />
     <HowWorks />
+    <UltimateSolutions />
     {/* <AboutUs /> */}
   </>
 )
