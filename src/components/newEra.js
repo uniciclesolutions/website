@@ -43,7 +43,7 @@ const Section = styled(Flex)`
   textalign: center;
 `
 
-const whatIs = () => {
+const newEra = () => {
   const { bikeImage } = useStaticQuery(
     graphql`
       query {
@@ -65,12 +65,7 @@ const whatIs = () => {
       flexDirection={["column", "column"]}
     >
       <DesktopFlex>
-        <Img
-          style={{ width: "65%", marginLeft: -165 }}
-          fluid={bikeImage.childImageSharp.fluid}
-        ></Img>
         <Flex
-          pl={[0, 260]}
           flexDirection="column"
           justifyContent="center"
           style={{ alignItems: "center", textAlign: "center" }}
@@ -81,6 +76,15 @@ const whatIs = () => {
             sustainable transport as a way for future mobility.
           </Desc>
         </Flex>
+        <Img
+          style={{
+            width: "100%",
+            marginRight: -195,
+            paddingRight: -19,
+            paddingLeft: 165,
+          }}
+          fluid={bikeImage.childImageSharp.fluid}
+        ></Img>
       </DesktopFlex>
       <MobileFlex>
         <Flex
@@ -100,4 +104,4 @@ const whatIs = () => {
     </Section>
   )
 }
-export default whatIs
+export default newEra

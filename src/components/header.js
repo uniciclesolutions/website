@@ -16,7 +16,6 @@ const Title = styled.h1`
   font-size: 16px;
   line-height: 29px;
   text-align: center;
-
   color: #333333;
 `
 const TitleBrand = styled.h2`
@@ -33,8 +32,8 @@ const Header = () => {
   return (
     <Navbar>
       <Flex py={[15, 30]} px={[15, 15]} justifyContent="center">
-        <Flex width={[1, 1 / 2]}>
-          <TitleBrand>UniCycle Solutions</TitleBrand>
+        <Flex width={[1, 1 / 2]} mt={[0, -10]}>
+          <TitleBrand>Uni Cycle Solutions</TitleBrand>
         </Flex>
 
         <DesktopFlex width={1 / 3} justifyContent="space-between">

@@ -122,7 +122,7 @@ const howWorks = () => {
             <Subtitle> 2. Find your Bikeep Rack to park</Subtitle>
             <Subtitle> 3. Unlock with your phone or ID card </Subtitle>
             <Subtitle> 4. Lock up your bike </Subtitle>
-            <Subtitle> 5. Access All Services, Anytime and Anywhere </Subtitle>
+            <Subtitle> 5. Access All Services </Subtitle>
           </Flex>
         </Flex>
       </MobileFlex>
