@@ -49,7 +49,7 @@ const points = () => {
         justifyContent="center"
         style={{ alignItems: "center" }}
       >
-        <SafeIcon width="330" height="80" />
+        <SecureIcon width="330" height="80" />
         <Subtitle>SAFE</Subtitle>
         <Desc>
           We provide a completely secure way to park your personal bicycle,
@@ -73,7 +73,7 @@ const points = () => {
         flexDirection="column"
         style={{ alignItems: "center" }}
       >
-        <SecureIcon width="330" height="80" />
+        <SafeIcon width="330" height="80" />
         <Subtitle>SIMPLE</Subtitle>
         <Desc>ALL the services and features that you need in ONE App</Desc>
       </Flex>
