@@ -8,6 +8,7 @@ import Points from "../components/points"
 import HowWorks from "../components/howWorks"
 import UltimateSolutions from "../components/ultimateSolution"
 import NewEra from "../components/newEra"
+import Footer from "../components/footer"
 import AboutUs from "../components/aboutUs"
 import { Flex } from "@rebass/grid"
 
@@ -21,6 +22,7 @@ const IndexPage = () => (
     <HowWorks />
     <UltimateSolutions />
     <NewEra />
+    <Footer />
     {/* <AboutUs /> */}
   </>
 )

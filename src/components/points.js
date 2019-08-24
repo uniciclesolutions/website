@@ -2,7 +2,9 @@ import React from "react"
 import { Flex } from "@rebass/grid"
 import styled from "styled-components"
 import Img from "gatsby-image"
-import SecureIcon from "../static/img/icons/secureIcon.svg"
+import SecureIcon from "../static/img/icons/lock.svg"
+import SuitIcon from "../static/img/icons/suit.svg"
+import SafeIcon from "../static/img/icons/safe.svg"
 const Navbar = styled.div`
   width: 100%;
   background-color: #9EC766
@@ -25,13 +27,15 @@ const Desc = styled.p`
   font-size: 16px;
   line-height: 23px;
   color: #696973;
+  text-align: center;
 `
 
 const points = () => {
   return (
     <Flex
       px={[20, 165]}
-      pt={[0, 50]}
+      pt={[0, 90]}
+      pb={[0, 90]}
       flexDirection={["column", "row"]}
       justifyContent="space-between"
       textAlign="center"
@@ -45,7 +49,7 @@ const points = () => {
         justifyContent="center"
         style={{ alignItems: "center" }}
       >
-        <SecureIcon width="330" height="80" />
+        <SafeIcon width="330" height="80" />
         <Subtitle>SAFE</Subtitle>
         <Desc>
           We provide a completely secure way to park your personal bicycle,
@@ -57,7 +61,7 @@ const points = () => {
         flexDirection="column"
         style={{ alignItems: "center" }}
       >
-        <SecureIcon width="330" height="80" />
+        <SuitIcon width="330" height="80" />
         <Subtitle>SUITED</Subtitle>
         <Desc>
           We bring access and control to a wide range of affordable and
