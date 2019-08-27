@@ -36,7 +36,8 @@ const ultimateSolution = () => {
   return (
     <Flex
       px={[20, 165]}
-      pt={[25, 50]}
+      pt={[-10, 100]}
+      pb={[0, 140]}
       flexDirection="column"
       justifyContent="center"
       style={{
@@ -54,12 +55,14 @@ const ultimateSolution = () => {
           much more!
         </b>
       </Desc>
-      <Title>Pedalling to reinvent cycling</Title>
-      <Desc>
-        We encourage cycling by offering the ultimate cycling solutions.
-        Everything you need regarding bicycles available with just a tap.
-      </Desc>
-      <Flex pt={[0, 25]} justifyContent="center">
+      <Flex pt={[0, 50]} flexDirection="column">
+        <Title>Pedalling to reinvent cycling</Title>
+        <Desc>
+          We encourage cycling by offering the ultimate cycling solutions.
+          Everything you need regarding bicycles available with just a tap.
+        </Desc>
+      </Flex>
+      <Flex pt={[0, 70]} justifyContent="center">
         <Title style={{ fontStyle: "italic" }}>
           " Empowering YOU to join the movement that will brighten our future."
         </Title>

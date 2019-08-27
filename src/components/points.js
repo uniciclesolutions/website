@@ -34,8 +34,8 @@ const points = () => {
   return (
     <Flex
       px={[20, 165]}
-      pt={[0, 90]}
-      pb={[0, 90]}
+      pt={[0, 170]}
+      pb={[0, 170]}
       flexDirection={["column", "row"]}
       justifyContent="space-between"
       textAlign="center"

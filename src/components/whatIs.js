@@ -60,21 +60,22 @@ const whatIs = () => {
   return (
     <Section
       px={[15, 165]}
-      pt={-10}
-      pb={-10}
+      pt={[-10, 0]}
+      pb={[0, 240]}
       flexDirection={["column", "column"]}
     >
-      <DesktopFlex>
+      <DesktopFlex justifyContent="flex-end">
         <Img
-          style={{ width: "65%", marginLeft: -165 }}
+          style={{
+            position: "absolute",
+            height: 730,
+            width: "50%",
+            left: 0,
+            zIndex: -2,
+          }}
           fluid={bikeImage.childImageSharp.fluid}
         ></Img>
-        <Flex
-          pl={[0, 260]}
-          flexDirection="column"
-          justifyContent="center"
-          style={{ alignItems: "center", textAlign: "center" }}
-        >
+        <Flex flexDirection="column" style={{ textAlign: "center" }} pt={300}>
           <Title> What´s U.C.S </Title>
           <Desc>
             Is a platform that connects cyclists to a community that pursues
