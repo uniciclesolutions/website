@@ -53,7 +53,10 @@ const points = () => {
         <Subtitle>SAFE</Subtitle>
         <Desc>
           We provide a completely secure way to park your personal bicycle,
-          Smart Bicycle racks. (Bikeep link)
+          Smart Bicycle racks.
+          <a style={{ color: "#117a65" }} href="www.bikee.com">
+            www.bikee.com
+          </a>
         </Desc>
       </Flex>
       <Flex
