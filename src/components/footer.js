@@ -25,8 +25,9 @@ const Desc = styled.p`
 const footer = () => {
   return (
     <Flex
-      px={[20, 165]}
+      px={[20, 200]}
       pt={[20, 50]}
+      pb={[0, 10]}
       flexDirection={["column"]}
       justifyContent="space-between"
       textAlign="center"
@@ -35,7 +36,7 @@ const footer = () => {
       }}
     >
       <Title> Uni Cycle Solutions</Title>
-      <Flex pt={[0, 20]} width={1} flexDirection={["column", "row"]}>
+      <Flex pt={[0, 100]} width={1} flexDirection={["column", "row"]}>
         <Flex
           justifyContent="space-between"
           width={0.5}
