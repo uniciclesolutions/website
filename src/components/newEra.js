@@ -75,7 +75,7 @@ const newEra = () => {
         >
           <Title> BIKEEP Smart Bicycle Docks </Title>
           <Desc>
-            Secure, smart and easy to use.  Best way to lock up your personal
+            Secure, smart and easy to use. Best way to lock up your personal
             bike.
           </Desc>
           <Subtitle>Eliminate bike theft</Subtitle>

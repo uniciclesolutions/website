@@ -49,7 +49,7 @@ const Header = () => {
           {/* <Title onClick="scrollWin(0, 50)">What´s U.C.S</Title> */}
           <Title onClick={() => scrollToPosition(1400)}>Security</Title>
           <Title onClick={() => scrollToPosition(2080)}>How does it Work</Title>
-          <Title onClick={() => scrollToPosition(3490)}>Bikeep</Title>
+          <Title onClick={() => scrollToPosition(3550)}>Bikeep</Title>
         </DesktopFlex>
       </Flex>
     </Navbar>
