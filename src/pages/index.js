@@ -11,9 +11,15 @@ import NewEra from "../components/newEra"
 import Footer from "../components/footer"
 import AboutUs from "../components/aboutUs"
 import { Flex } from "@rebass/grid"
+import { Helmet } from "react-helmet"
 
 const IndexPage = () => (
   <>
+          <Helmet>
+          <meta charSet="utf-8" />
+          <title>UniCycleSolutions</title>
+          <link rel="canonical" href="http://unicycle.solutions" />
+        </Helmet>
     <Header />
     <Application />
     {/* <FirstImage /> */}
