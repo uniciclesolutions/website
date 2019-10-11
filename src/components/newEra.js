@@ -61,11 +61,22 @@ const newEra = () => {
   )
   return (
     <Section
-      px={[15, 165]}
+    px={[0, 165]}
       pt={-10}
       pb={-10}
       flexDirection={["column", "column"]}
+      alignItems={"center"}
+      justifyContent={"center"}
     >
+      <MobileFlex style={{width: "100%"}}>
+      <Img
+          style={{
+            height: 350,
+            width: "100%",
+          }}
+          fluid={bikeImage.childImageSharp.fluid}
+        ></Img>
+      </MobileFlex>
       <DesktopFlex>
         <Flex
           flexDirection="column"
@@ -106,7 +117,7 @@ const newEra = () => {
       </DesktopFlex>
       <MobileFlex>
         <Flex
-          pl={[0, 260]}
+          pl={[20, 260]}
           flexDirection="column"
           justifyContent="center"
           style={{ alignItems: "center" }}

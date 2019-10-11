@@ -70,10 +70,11 @@ const howWorks = () => {
   )
   return (
     <Section
-      px={[15, 0]}
+      px={[0, 0]}
       pt={-10}
       pb={-10}
       flexDirection={["column", "column"]}
+
     >
       <DesktopFlex>
         <Flex width={0.35}>
@@ -88,6 +89,7 @@ const howWorks = () => {
           style={{ alignItems: "center" }}
           width={0.3}
           pt={20}
+
         >
           <Title> How does it work? </Title>
           <Subtitle> 1. Download the App </Subtitle>
@@ -104,26 +106,25 @@ const howWorks = () => {
         </Flex>
       </DesktopFlex>
       <MobileFlex>
+      <Img
+            style={{ width: "100%" }}
+            fluid={image2.childImageSharp.fluid}
+          ></Img>
+      </MobileFlex>
+      <MobileFlex>
         <Flex
-          pl={[0, 260]}
-          flexDirection="column"
-          justifyContent="center"
-          style={{ alignItems: "center" }}
+          pl={[20, 260]}
+        
+          style={{ flexDirection:"column",alignItems: "center" , justifyContent:"center"}}
           pt={20}
         >
-          <Flex
-            flexDirection="column"
-            justifyContent="center"
-            style={{ alignItems: "center" }}
-            pt={20}
-          >
+         
             <Title> How does it work? </Title>
             <Subtitle> 1. Download the App </Subtitle>
             <Subtitle> 2. Find your Bikeep Rack to park</Subtitle>
             <Subtitle> 3. Unlock with your phone or ID card </Subtitle>
             <Subtitle> 4. Lock up your bike </Subtitle>
             <Subtitle> 5. Access All Services </Subtitle>
-          </Flex>
         </Flex>
       </MobileFlex>
     </Section>

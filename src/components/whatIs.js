@@ -59,10 +59,12 @@ const whatIs = () => {
   )
   return (
     <Section
-      px={[15, 165]}
+      px={[0, 165]}
       pt={[-10, 0]}
       pb={[0, 240]}
       flexDirection={["column", "column"]}
+      
+
     >
       <DesktopFlex justifyContent="flex-end">
         <Img
@@ -77,15 +79,24 @@ const whatIs = () => {
         ></Img>
         <Flex flexDirection="column" style={{ textAlign: "center" }} pt={300}>
           <Title> What´s U.C.S </Title>
-          <Desc>
+          <Desc style={{width:"90%", marginLeft:"10%"}}> 
             Is a platform that connects cyclists to a community that pursues
             sustainable transport as a way for future mobility.
           </Desc>
         </Flex>
       </DesktopFlex>
       <MobileFlex>
+      <Img
+          style={{
+            height: 350,
+            width: "100%",
+          }}
+          fluid={bikeImage.childImageSharp.fluid}
+        ></Img>
+      </MobileFlex>
+      <MobileFlex>
         <Flex
-          pl={[0, 260]}
+          pl={[18, 260]}
           flexDirection="column"
           justifyContent="center"
           style={{ alignItems: "center" }}
