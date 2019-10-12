@@ -33,7 +33,7 @@ const Desc = styled.p`
   font-size: 16px;
   line-height: 23px;
   color: #696973;
-  width: 375px;
+  width: 100%;
   @media (max-width: 426px) {
     width: 100%;
   }
@@ -77,9 +77,9 @@ const whatIs = () => {
           }}
           fluid={bikeImage.childImageSharp.fluid}
         ></Img>
-        <Flex flexDirection="column" style={{ textAlign: "center" }} pt={300}>
+        <Flex flexDirection="column" style={{ textAlign: "center" , marginLeft:"70%", width:"50%"}} pt={300}>
           <Title> What´s U.C.S </Title>
-          <Desc style={{width:"90%", marginLeft:"10%"}}> 
+          <Desc > 
             Is a platform that connects cyclists to a community that pursues
             sustainable transport as a way for future mobility.
           </Desc>
