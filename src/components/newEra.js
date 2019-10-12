@@ -25,7 +25,7 @@ const Subtitle = styled.h2`
   color: #333333;
 `
 
-const Desc = styled.p`
+const Desc2 = styled.p`
   font-family: Heebo;
   font-style: normal;
   font-weight: normal;
@@ -77,7 +77,7 @@ const newEra = () => {
           fluid={bikeImage.childImageSharp.fluid}
         ></Img>
       </MobileFlex>
-      <DesktopFlex>
+      <DesktopFlex style={{width: "100%"}}>
         <Flex
           flexDirection="column"
           justifyContent="center"
@@ -85,24 +85,24 @@ const newEra = () => {
           width={[1, 0.5]}
         >
           <Title> BIKEEP Smart Bicycle Docks </Title>
-          <Desc>
+          <Desc2>
             Secure, smart and easy to use. Best way to lock up your personal
             bike.
-          </Desc>
+          </Desc2>
           <Subtitle>Eliminate bike theft</Subtitle>
-          <Desc>
+          <Desc2>
             4 layers of security - steel bar, loudspeaker, distress signal
             forwarding, and camera surveillance.
-          </Desc>
+          </Desc2>
           <Subtitle>Full control</Subtitle>
-          <Desc>
+          <Desc2>
             Abandoned bike identi cation, usage reports, access restrictions -
             manager has total control over usage.
-          </Desc>
+          </Desc2>
           <Subtitle>Easy to use</Subtitle>
-          <Desc>
+          <Desc2>
             Use Bikeep mobile app or integrate with your existing access cards.
-          </Desc>
+          </Desc2>
         </Flex>
         <Img
           style={{
@@ -124,24 +124,24 @@ const newEra = () => {
           pt={20}
         >
           <Title> BIKEEP Smart Bicycle Docks </Title>
-          <Desc>
+          <Desc2>
             Secure, smart and easy to use.  Best way to lock up your personal
             bike.
-          </Desc>
+          </Desc2>
           <Subtitle>Eliminate bike theft</Subtitle>
-          <Desc>
+          <Desc2>
             4 layers of security - steel bar, loudspeaker, distress signal
             forwarding, and camera surveillance.
-          </Desc>
+          </Desc2>
           <Subtitle>Full control</Subtitle>
-          <Desc>
+          <Desc2>
             Abandoned bike identi cation, usage reports, access restrictions -
             manager has total control over usage.
-          </Desc>
+          </Desc2>
           <Subtitle>Easy to use</Subtitle>
-          <Desc>
+          <Desc2>
             Use Bikeep mobile app or integrate with your existing access cards.
-          </Desc>
+          </Desc2>
         </Flex>
       </MobileFlex>
     </Section>
