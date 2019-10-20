@@ -47,6 +47,8 @@ const points = () => {
         width={[1, 1 / 4]}
         flexDirection="column"
         justifyContent="center"
+        marginTop={["20px", "0px"]}
+
         style={{ alignItems: "center" }}
       >
         <SecureIcon width="330" height="80" />

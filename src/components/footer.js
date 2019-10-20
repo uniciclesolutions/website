@@ -3,6 +3,7 @@ import { Flex } from "@rebass/grid"
 import styled from "styled-components"
 import LinkedinLogo from "../static/img/icons/linkedin.svg"
 import InstaLogo from "../static/img/icons/insta.svg"
+import TwitterLogo from "../static/img/icons/twitter.svg"
 
 const Title = styled.h1`
   font-family: Heebo;
@@ -52,8 +53,18 @@ const footer = () => {
           </a>
           <a href="https://www.instagram.com/unicyclesolutions/">
             <InstaLogo
-              style={{ width: 50, height: 50, cursor: "pointer" }}
+              style={{
+                width: 50,
+                height: 50,
+                cursor: "pointer",
+                marginRight: 30,
+              }}
             ></InstaLogo>
+          </a>
+          <a href="https://www.twitter.com/unicyclesolns/">
+            <TwitterLogo
+              style={{ width: 50, height: 50, cursor: "pointer" }}
+            ></TwitterLogo>
           </a>
         </Flex>
         <Flex justifyContent="flex-end" width={0.5}>
