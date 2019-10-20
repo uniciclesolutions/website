@@ -96,7 +96,7 @@ const newEra = () => {
           </Desc2>
           <Subtitle>Full control</Subtitle>
           <Desc2>
-            Abandoned bike identi cation, usage reports, access restrictions -
+            Abandoned bike identification, usage reports, access restrictions -
             manager has total control over usage.
           </Desc2>
           <Subtitle>Easy to use</Subtitle>
@@ -135,7 +135,7 @@ const newEra = () => {
           </Desc2>
           <Subtitle>Full control</Subtitle>
           <Desc2>
-            Abandoned bike identi cation, usage reports, access restrictions -
+            Abandoned bike identification, usage reports, access restrictions -
             manager has total control over usage.
           </Desc2>
           <Subtitle>Easy to use</Subtitle>
