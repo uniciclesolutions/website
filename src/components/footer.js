@@ -14,6 +14,15 @@ const Title = styled.h1`
 
   color: #ffffff;
 `
+const Legal = styled.h3`
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #ffffff;
+`
 
 const Desc = styled.p`
   font-family: Heebo;
@@ -39,6 +48,9 @@ const footer = () => {
       }}
     >
       <Title> Uni Cycle Solutions</Title>
+      <a style={{ textDecoration: "none" }} href="/legal">
+        <Legal> Legal</Legal>
+      </a>
       <Flex pt={[0, 50]} flexDirection={["column", "row"]}>
         <Flex style={{ flex: "auto" }} flexDirection={["column", "row"]}>
           <a href=" https://www.linkedin.com/company/unicyclesolutions/about/">
@@ -68,7 +80,7 @@ const footer = () => {
           </a>
         </Flex>
         <Flex justifyContent="flex-end" width={0.5}>
-          <Desc>© 2019 All rights reserved</Desc>
+          <Desc>© 2020 All rights reserved</Desc>
         </Flex>
       </Flex>
     </Flex>

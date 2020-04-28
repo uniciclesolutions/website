@@ -41,7 +41,9 @@ const Header = () => {
     <Navbar>
       <Flex py={[15, 30]} px={[15, 15]} justifyContent="center">
         <Flex width={[1, 1 / 2]} mt={[0, -10]}>
-          <TitleBrand>Uni Cycle Solutions</TitleBrand>
+          <a style={{ textDecoration: "none" }} href="/">
+            <TitleBrand>Uni Cycle Solutions</TitleBrand>
+          </a>
         </Flex>
 
         <DesktopFlex width={1 / 3} justifyContent="space-between">
